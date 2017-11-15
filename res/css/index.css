@@ -1,14 +1,17 @@
+/*
 * {
     border: 1px solid red;
 }
+*/
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+    margin: 0px;
 }
 
 
@@ -18,14 +21,111 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    border-bottom: 1px solid white;
+    top:0px;
+    border-bottom: 1px solid seashell;
     height: 69px;
     width: 100%;
+    margin: 0px;
+    background-color: black;
+    z-index: 1;
 }
 
 header img {
-    
     margin: auto auto auto 10px;
     height: 50px;
 }
 
+header nav span a {
+    color: seashell;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 700px;
+    width: 1200px;
+    background: url(../img/img-mission-background.jpg);
+    margin: 70px auto 0px auto;
+}
+
+.banner .content {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+h2
+, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+.products {
+    width: 1000px;
+    margin: 50px auto 0px auto;
+}
+
+.products .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.products .items .item {
+    margin: 10px;
+}
+
+.products .items .item img {
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+.products .items .item span {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.locations {
+    height: 500px;
+    width: 1200px;
+    margin: 30px auto;
+    background: url(../img/img-locations-background.jpg);
+    padding-top: 70px;
+}
+
+.locations .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.locations .items .item {
+    background-color: black;
+    margin: 15px 20px;
+    width: 300px;
+    opacity: 1;
+}
+
+.locations .items .item p {
+    margin: 35px auto;
+}
+
+.contact {
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    margin: 40px 20px;
+    text-align: left;
+}
